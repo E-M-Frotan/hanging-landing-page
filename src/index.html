@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../output/output.css" />
+  </head>
+  <body>
+    <!-- ======================== Header ======================== -->
+    <header class="min-h-28 px-5 bg-headerBG sticky top-0 z-50">
+      <div class="container mx-auto flex h-28 items-center justify-between">
+        <!-- logo  -->
+        <div class="flex items-center">
+          <img src="../images/logo.webp" class="w-16 h-16" alt="" />
+          <strong class="text-white text-2xl font-bold">Stop Hunger </strong>
+        </div>
+        <!-- nav -->
+        <ul
+          id="menu"
+          class="md:space-x-4 lg:space-x-7 hidden md:flex text-white text-md"
+        >
+          <li>
+            <a href="#" class="border-b-2 hover:border-b-2">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:border-b-2">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:border-b-2">Support Us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:border-b-2">News</a>
+          </li>
+          <li>
+            <a href="#" class="hover:border-b-2">Contact</a>
+          </li>
+        </ul>
+        <button class="bg-primary hidden md:block px-7 text-2xl py-3">
+          DONATE
+        </button>
+        <!-- Burger Menu -->
+        <div class="md:hidden">
+          <button
+            id="menu-btn"
+            class="text-white hover:text-blue-500 focus:outline-none"
+          >
+            <!-- Menu Icon -->
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- ======================== Hero ======================== -->
+    <div
+      class="w-full relative container mx-auto bg-[url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/7258853/809900_98905.jpg')] z-40 bg-cover bg-center bg-fixed"
+    >
+      <div class="absolute inset-0 bg-black opacity-15 h-screen"></div>
+      <div
+        class="relative z-10 flex items-center justify-center flex-col h-[100vh] text-white"
+      >
+        <h1
+          class="text-6xl md:text-8xl text-nowrap tracking-tight font-bold mb-12"
+        >
+          STOP HUNGER
+        </h1>
+        <p
+          class="text-primary text-2xl md:text-3xl max-w-4xl text-center leading-10"
+        >
+          Hundreds of millions of families in the world go hungry every year.
+          Help us provide them with enough to eat.
+        </p>
+      </div>
+    </div>
+    <!-- ======================== Goals ======================== -->
+    <div class="flex flex-col w-full px-10 md:px-[15rem] my-24 gap-10">
+      <div
+        class="relative py-11 -z-1 bg-[url('https://uploads.strikinglycdn.com/static/backgrounds/nature/175.jpg')] bg-cover bg-center bg-no-repeat text-center"
+      >
+        <h2 class="text-lg font-bold text-gray-800 mb-5 opacity-90">
+          OUR MISSION
+        </h2>
+        <p class="text-gray-600 mb-5 opacity-90">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida
+          dapibus nulla at luctus. Quisque euismod et arcu non sodales. Duis
+          mollis odio sit amet sem tempus sollicitudin. Praesent at diam vitae
+          quam mollis iaculis. Nullam a maximus libero, nec interdum odio
+        </p>
+        <a href="#" class="underline underline-">Learn More</a>
+      </div>
+      <div
+        class="relative py-11 -z-1 bg-[url('https://uploads.strikinglycdn.com/static/backgrounds/nature/175.jpg')] bg-cover bg-center bg-no-repeat text-center"
+      >
+        <h2 class="text-lg font-bold text-gray-800 mb-5 opacity-90">
+          OUR MISSION
+        </h2>
+        <p class="text-gray-600 mb-5 opacity-90">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida
+          dapibus nulla at luctus. Quisque euismod et arcu non sodales. Duis
+          mollis odio sit amet sem tempus sollicitudin. Praesent at diam vitae
+          quam mollis iaculis. Nullam a maximus libero, nec interdum odio
+        </p>
+        <a href="#" class="underline underline-">Learn More</a>
+      </div>
+    </div>
+    <!-- ======================== Latest ======================== -->
+    <div
+      class="container mx-auto text-center flex items-center flex-col mb-[5rem]"
+    >
+      <h3 class="text-4xl font-bold mb-8">LATEST NEWS</h3>
+      <p class="max-w-sm px-6 py-4 bg-gray-200 text-xl text-gray-400">
+        There are no published blog posts yet
+      </p>
+    </div>
+    <!-- ======================== Help ======================== -->
+    <div
+      class="relaive mb-[6rem] inset-0 bg-[url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/7258853/687202_771845.jpeg')] h-[20rem] w-full bg-cover bg-center bg-fixed"
+    >
+      <div class="flex flex-col justify-center items-center pt-16">
+        <h2 class="text-4xl font-bold mb-8 text-white">
+          HELP STOP HUNGRY NOW!
+        </h2>
+        <button class="bg-primary px-7 text-2xl py-3">DONATE</button>
+      </div>
+    </div>
+    <!-- ======================== RECENT EVENTS OR Footer======================== -->
+    <footer class="">
+      <div class="w-3/4 mx-auto">
+        <h3 class="text-center mb-36 text-3xl md:text-4xl font-bold">
+          RECENT EVENTS
+        </h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 pb-3 border-b-2 mb-4"
+        >
+          <div class="flex flex-col">
+            <h4 class="font-semibold text-xl mb-1">Contact Us</h4>
+            <address>
+              500 Demo Street<br />
+              New York, NY 94213
+            </address>
+            <a href="#">info@yourdomain.com</a>
+          </div>
+          <div class="flex flex-col">
+            <h4 class="font-semibold text-xl mb-1">Get in touch</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+          <div class="flex flex-col">
+            <h4 class="font-semibold text-xl mb-1">Other</h4>
+            <a href="#">News</a>
+            <a href="#">Events</a>
+            <a href="#"> Support Us</a>
+          </div>
+        </div>
+        <h4
+          class="text-center text-lg md:text-2xl font-serif text-gray-500 mb-24"
+        >
+          REGISTERED CHARITY NUMBER : 0123456789
+        </h4>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
